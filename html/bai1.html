@@ -8,10 +8,44 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <style>
+        .gallery-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="gallery-title">Animal Gallery</div>
+        <div class="row g-3">
+            <!-- Image 1 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="lion.jpg" data-lightbox="animals" data-title="Lion">
+                    <img src="../img/lion.jpg" class="gallery-img" alt="Lion">
+                </a>
+                <div class="caption">Lion</div>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4 col-sm-6">
+                <a href="cat.jpg" data-lightbox="animals" data-title="Cat">
+                    <img src="../img/cat.jpg" class="gallery-img" alt="Cat">
+                </a>
+                <div class="caption">Cat</div>
+            </div>
     </div>
 </body>
 </html>
